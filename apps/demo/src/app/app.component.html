@@ -26,6 +26,8 @@
 
       <mat-card-content class="demo-card-content">
         <form >
+          <button (click)="reload()">Change value</button>
+          <button (click)="formValue()">Get Form Value</button>
         <cron-editor  #cronEditorDemo [formControl]="cronForm"  [options]="cronOptions">Cron here...</cron-editor>
         </form>
       </mat-card-content>

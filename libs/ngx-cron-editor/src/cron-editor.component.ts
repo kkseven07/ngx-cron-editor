@@ -41,6 +41,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
   public selectOptions = this.getSelectOptions();
   public state: any;
 
+  public selectedIndex: number;
+
   private localCron = '0 0 1/1 * *';
   private isDirty: boolean;
 
@@ -118,7 +120,9 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
 
     const [defaultHours, defaultMinutes, defaultSeconds] = this.options.defaultTime.split(':').map(Number);
 
-    this.cronForm = new FormControl('0 0 1/1 * *');
+    console.log('inited');
+
+    this.cronForm = new FormControl(this.cron);
 
     this.minutesForm = this.fb.group({
       hours: [0],
@@ -324,13 +328,15 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
     }
   }
 
-  private handleModelChange(cron: string) {
-    if (this.isDirty) {
-      this.isDirty = false;
-      return;
-    } else {
-      this.isDirty = false;
-    }
+  public handleModelChange(cron: string) {
+    // if (this.isDirty) {
+    //   this.isDirty = false;
+    //   return;
+    // } else {
+    //   this.isDirty = false;
+    // }
+
+    this.cron = cron;
 
     if (!this.cronIsValid(cron)) {
       if (this.isCronFlavorQuartz) {
@@ -351,17 +357,27 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
 
     if (cron.match(/\d+ 0\/\d+ \* 1\/1 \* [\?\*] \*/)) {
       this.activeTab = 'minutes';
+      this.selectedIndex = 0;
 
       this.state.minutes.minutes = parseInt(minutes.substring(2), 10);
       this.state.minutes.seconds = parseInt(seconds, 10);
     } else if (cron.match(/\d+ \d+ 0\/\d+ 1\/1 \* [\?\*] \*/)) {
       this.activeTab = 'hourly';
+      this.selectedIndex = 1;
 
       this.state.hourly.hours = parseInt(hours.substring(2), 10);
       this.state.hourly.minutes = parseInt(minutes, 10);
       this.state.hourly.seconds = parseInt(seconds, 10);
+
+      this.hourlyForm.patchValue({
+        hours: this.state.hourly.hours,
+        minutes: this.state.hourly.minutes,
+        seconds: this.state.hourly.seconds
+      });
+
     } else if (cron.match(/\d+ \d+ \d+ 1\/\d+ \* [\?\*] \*/)) {
       this.activeTab = 'daily';
+      this.selectedIndex = 2;
 
       this.state.daily.subTab = 'everyDays';
       this.state.daily.everyDays.days = parseInt(dayOfMonth.substring(2), 10);
@@ -372,6 +388,7 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       this.state.daily.everyDays.seconds = parseInt(seconds, 10);
     } else if (cron.match(/\d+ \d+ \d+ [\?\*] \* MON-FRI \*/)) {
       this.activeTab = 'daily';
+      this.selectedIndex = 2;
 
       this.state.daily.subTab = 'everyWeekDay';
       const parsedHours = parseInt(hours, 10);
@@ -381,6 +398,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       this.state.daily.everyWeekDay.seconds = parseInt(seconds, 10);
     } else if (cron.match(/\d+ \d+ \d+ [\?\*] \* (MON|TUE|WED|THU|FRI|SAT|SUN)(,(MON|TUE|WED|THU|FRI|SAT|SUN))* \*/)) {
       this.activeTab = 'weekly';
+      this.selectedIndex = 3;
+
       this.selectOptions.days.forEach(weekDay => this.state.weekly[weekDay] = false);
       dayOfWeek.split(',').forEach(weekDay => this.state.weekly[weekDay] = true);
       const parsedHours = parseInt(hours, 10);
@@ -390,6 +409,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       this.state.weekly.seconds = parseInt(seconds, 10);
     } else if (cron.match(/\d+ \d+ \d+ (\d+|L|LW|1W) 1\/\d+ [\?\*] \*/)) {
       this.activeTab = 'monthly';
+      this.selectedIndex = 4;
+
       this.state.monthly.subTab = 'specificDay';
       this.state.monthly.specificDay.day = dayOfMonth;
       this.state.monthly.specificDay.months = parseInt(month.substring(2), 10);
@@ -402,6 +423,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       const day = dayOfWeek.substr(0, 3);
       const monthWeek = dayOfWeek.substr(3);
       this.activeTab = 'monthly';
+      this.selectedIndex = 4;
+
       this.state.monthly.subTab = 'specificWeekDay';
       this.state.monthly.specificWeekDay.monthWeek = monthWeek;
       this.state.monthly.specificWeekDay.day = day;
@@ -413,6 +436,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       this.state.monthly.specificWeekDay.seconds = parseInt(seconds, 10);
     } else if (cron.match(/\d+ \d+ \d+ (\d+|L|LW|1W) \d+ [\?\*] \*/)) {
       this.activeTab = 'yearly';
+      this.selectedIndex = 5;
+
       this.state.yearly.subTab = 'specificMonthDay';
       this.state.yearly.specificMonthDay.month = parseInt(month, 10);
       this.state.yearly.specificMonthDay.day = dayOfMonth;
@@ -425,6 +450,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       const day = dayOfWeek.substr(0, 3);
       const monthWeek = dayOfWeek.substr(3);
       this.activeTab = 'yearly';
+      this.selectedIndex = 5;
+
       this.state.yearly.subTab = 'specificMonthWeek';
       this.state.yearly.specificMonthWeek.monthWeek = monthWeek;
       this.state.yearly.specificMonthWeek.day = day;
@@ -436,6 +463,8 @@ export class CronGenComponent implements OnInit, ControlValueAccessor {
       this.state.yearly.specificMonthWeek.seconds = parseInt(seconds, 10);
     } else {
       this.activeTab = 'advanced';
+      this.selectedIndex = 6;
+
       this.state.advanced.expression = origCron;
     }
   }

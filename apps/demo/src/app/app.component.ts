@@ -9,7 +9,7 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public cronExpression = '0 0 1/1 * *';
+  public cronExpression = '10 10 1/1 * *';
   public isCronDisabled = false;
   public cronOptions: CronOptions = {
     formInputClass: 'form-control cron-editor-input',
@@ -48,5 +48,15 @@ export class AppComponent implements OnInit {
 
   cronFlavorChange() {
     this.cronEditorDemo.options = this.cronOptions;
+  }
+
+  public reload(){
+    this.cronExpression = '3 0/3 1/1 * *';
+    this.cronForm.patchValue(this.cronExpression);
+    this.cronEditorDemo.handleModelChange(this.cronExpression);
+  }
+
+  public formValue(){
+    console.log(this.cronForm.value);
   }
 }
