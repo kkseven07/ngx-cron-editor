@@ -1,13 +1,13 @@
 ngx-cron-editor
 ===
 
-An Angular 8 component for building cron expressions graphically. It is meant
+An Angular 12 component for building cron expressions graphically. It is meant
 to be used in reactive forms and support Angular Material Design styling.
  
 
 ## Demo
 
-A work-in-progress demo can be found [here](https://haavardj.github.io/ngx-cron-editor/)
+Forked from [here](https://haavardj.github.io/ngx-cron-editor/)
 
 ## Usage
 
@@ -84,8 +84,9 @@ export class MyComponent {
 ## History
 
 The ngx-cron-editor is a fork of the vincentjames501's [angular-cron-gen](https://github.com/vincentjames501/angular-cron-gen) for AngularJS 1.5+ and claudiuconstantin's [cron-editor(https://github.com/claudiuconstantin/cron-editor)]. 
+Then, a new fork was made in order to upgrade to Angular 12, remove jQuery and fix an issue when bidnig value to a reactive form.
 
-**The main additions of this fork is support for Angular 8+ and material design.**
+**The main additions of this fork is support for Angular 12+ and material design.**
 
 
 ## License:

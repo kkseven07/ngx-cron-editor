@@ -1,8 +1,8 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "description": "A cron expression generator for Angular 8+",
-  "name": "ngx-cron-editor",
-  "version": "0.6.4",
+  "name": "@winarg/ngx-cron-editor",
+  "version": "0.8.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/haavardj/ngx-cron-editor"
@@ -13,7 +13,8 @@
   },
   "contributors": [
     "Claudiu Constantin",
-    "Eduardo Sarmiento"
+    "Eduardo Sarmiento",
+    "Anargyros Roussos"
   ],
   "keywords": [
     "angular",
@@ -24,22 +25,22 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haavardj/ngx-cron-editor/issues"
+    "url": "https://github.com/winarg/ngx-cron-editor/issues"
   },
-  "homepage": "https://github.com/haavardj/ngx-cron-editor",
+  "homepage": "https://github.com/winarg/ngx-cron-editor",
   "peerDependencies": {
-    "@angular/core": "~8.2.14",
-    "@angular/animations": "~8.2.14",
-    "@angular/common": "~8.2.14",
-    "@angular/compiler": "~8.2.14",
-    "@angular/forms": "~8.2.14",
-    "@angular/platform-browser": "~8.2.14",
-    "@angular/platform-browser-dynamic": "~8.2.14",
-    "@angular/router": "~8.2.14",
-    "@angular/material": "^8.2.3",
-    "rxjs": "~6.5.3",
-    "tslib": "^1.10.0",
-    "zone.js": "~0.9.1"
+    "@angular/core": "~12.2.11",
+    "@angular/animations": "~12.2.11",
+    "@angular/common": "~12.2.11",
+    "@angular/compiler": "~12.2.11",
+    "@angular/forms": "~12.2.11",
+    "@angular/platform-browser": "~12.2.11",
+    "@angular/platform-browser-dynamic": "~12.2.11",
+    "@angular/router": "~12.2.11",
+    "@angular/material": "^12.2.11",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.1",
+    "zone.js": "~0.11.4"
   },
   "ngPackage": {
     "lib": {
