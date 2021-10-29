@@ -7,7 +7,7 @@
     "Eduardo Sarmiento",
     "Anargyros Roussos"
   ],
-  "version": "0.8.0",
+  "version": "0.8.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,12 +28,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-lib": "ng-packagr -p libs/ngx-cron-editor/package.json",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "copyhtml": "copy 'src/app/cron-editor/*.html' './components/cron-editor/'",
     "copycss": "copy 'src/app/cron-editor/*.css' './components/cron-editor/'",
-    "pack": "ng-packagr -p package.json & cd dist & npm pack"
+    "pack": "ng-packagr -p libs/ngx-cron-editor/package.json & cd dist/libs/ngx-cron-editor & npm publish --access=public"
   },
   "dependencies": {
     "@angular/animations": "~12.2.11",

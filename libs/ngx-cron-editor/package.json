@@ -1,11 +1,11 @@
 {
   "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "description": "A cron expression generator for Angular 8+",
+  "description": "A cron expression generator for Angular 12+",
   "name": "@winarg/ngx-cron-editor",
-  "version": "0.8.0",
+  "version": "0.8.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/haavardj/ngx-cron-editor"
+    "url": "git://github.com/winarg/ngx-cron-editor"
   },
   "author": {
     "name": "Håvard Dagenborg Johansen",
