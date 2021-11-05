@@ -28,13 +28,13 @@ export class TimePickerComponent {
   @Input() public hideMinutes = false;
   @Input() public hideSeconds = true;
 
-  get hours(): number[] {
-    return this.use24HourTime ? [... range(0, 23)] : [... range(0, 12)];
-  }
-
   public minutes =  [...range(0, 59) ];
   public seconds = [...range(0, 59) ];
   public hourTypes = ['AM', 'PM'];
+
+  get hours(): number[] {
+    return this.use24HourTime ? [... range(0, 23)] : [... range(0, 12)];
+  }
 
   constructor(public parent: ControlContainer) {}
 

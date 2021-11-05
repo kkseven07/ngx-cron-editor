@@ -1,6 +1,6 @@
 <section class="mat-typography demo-container">
 
-  <h1>Angular 8+ Cron Expression Editor</h1>
+  <h1>Angular 12+ Cron Expression Editor</h1>
 
     <mat-card class="demo-card">
       <mat-card-header class="demo-card-header">
@@ -26,9 +26,10 @@
 
       <mat-card-content class="demo-card-content">
         <form >
+          <input type="text" [(ngModel)]="txtCron" name="txtCron"/>
           <button (click)="reload()">Change value</button>
           <button (click)="formValue()">Get Form Value</button>
-        <cron-editor  #cronEditorDemo [formControl]="cronForm"  [options]="cronOptions">Cron here...</cron-editor>
+        <cron-editor #cronEditorDemo [formControl]="cronForm" [options]="cronOptions">Cron here...</cron-editor>
         </form>
       </mat-card-content>
 

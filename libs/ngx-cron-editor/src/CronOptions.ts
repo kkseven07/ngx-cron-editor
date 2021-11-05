@@ -13,7 +13,7 @@ export interface CronOptions {
     hideMonthlyTab: boolean;
     hideYearlyTab: boolean;
     hideAdvancedTab: boolean;
-    hideSpecificWeekDayTab : boolean;
+    hideSpecificWeekDayTab: boolean;
     hideSpecificMonthWeekTab: boolean;
 
     use24HourTime: boolean;

@@ -9,7 +9,7 @@ import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public cronExpression = '10 10 1/1 * *';
+  public cronExpression = '3 3 1/3 * *'; // '10 10 1/1 * *';
   public isCronDisabled = false;
   public cronOptions: CronOptions = {
     formInputClass: 'form-control cron-editor-input',
@@ -21,10 +21,10 @@ export class AppComponent implements OnInit {
 
     hideMinutesTab: false,
     hideHourlyTab: false,
-    hideDailyTab: false,
+    hideDailyTab: true,
     hideWeeklyTab: false,
     hideMonthlyTab: false,
-    hideYearlyTab: false,
+    hideYearlyTab: true,
     hideAdvancedTab: false,
     hideSpecificWeekDayTab: false,
     hideSpecificMonthWeekTab: false,
@@ -40,6 +40,8 @@ export class AppComponent implements OnInit {
 
   cronForm: FormControl;
 
+  public txtCron = '0/1 * 1/1 * *';
+
   constructor() {}
 
   ngOnInit(): void {
@@ -50,13 +52,13 @@ export class AppComponent implements OnInit {
     this.cronEditorDemo.options = this.cronOptions;
   }
 
-  public reload(){
-    this.cronExpression = '3 0/3 1/1 * *';
+  public reload() {
+    this.cronExpression = this.txtCron; // '3 0/3 1/1 * *';
     this.cronForm.patchValue(this.cronExpression);
-    this.cronEditorDemo.handleModelChange(this.cronExpression);
+    // this.cronEditorDemo.handleModelChange(this.cronExpression);
   }
 
-  public formValue(){
+  public formValue() {
     console.log(this.cronForm.value);
   }
 }

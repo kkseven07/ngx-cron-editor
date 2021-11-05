@@ -7,7 +7,7 @@ to be used in reactive forms and support Angular Material Design styling.
 
 ## Demo
 
-Forked from [here](https://haavardj.github.io/ngx-cron-editor/)
+Forked from [here](https://winarg.github.io/ngx-cron-editor/)
 
 ## Usage
 
@@ -83,7 +83,8 @@ export class MyComponent {
 
 ## History
 
-The ngx-cron-editor is a fork of the vincentjames501's [angular-cron-gen](https://github.com/vincentjames501/angular-cron-gen) for AngularJS 1.5+ and claudiuconstantin's [cron-editor(https://github.com/claudiuconstantin/cron-editor)]. 
+The ngx-cron-editor is a fork of the vincentjames501's [angular-cron-gen](https://github.com/vincentjames501/angular-cron-gen) for AngularJS 1.5+ and claudiuconstantin's [cron-editor(https://github.com/claudiuconstantin/cron-editor)].
+
 Then, a new fork was made in order to upgrade to Angular 12, remove jQuery and fix an issue when bidnig value to a reactive form.
 
 **The main additions of this fork is support for Angular 12+ and material design.**
