@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="be2e3eba8f8d675c0dfd9d573ce6f9da7d394537" datatype="html">
+        <source>Every </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6a4a2e0f73188c38fa9907d7e3981269d29faaa4" datatype="html">
+        <source>Day(s)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="922f626fd7ebb7ceb33f1a9e144d54ab6443e1a6" datatype="html">
+        <source>at</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f59532f6d1d98d6162adb971dd7ff18a17d8d778" datatype="html">
+        <source>Week Day (MON-FRI) at </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a43c57a7cbebf57eb33a2eae5e994c91d9887596" datatype="html">
+        <source>Monday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="48a2a35957ce394eb2c59ae35c99642360af70ee" datatype="html">
+        <source>Tuesday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b0af441f9ba8b82952b9ec10fb8c62e8fec67df9" datatype="html">
+        <source>Wednesday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="55c583b99c809818ec27df065ccf05357a6ac10b" datatype="html">
+        <source>Thursday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e91b54925dc5f490753f60f53ef6f8b4609e6215" datatype="html">
+        <source>Friday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c0d2dd391a3eca8e841a5d0e035cd268280eb68e" datatype="html">
+        <source>Saturday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8339364b054610983b7f2334bb807fff7613bddf" datatype="html">
+        <source>Sunday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a474587a82060ac8362c3bfd12348b8571c4b2a0" datatype="html">
+        <source>at time </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f2f580c540fa5b6d61509f67d565457bf75ffc42" datatype="html">
+        <source>On the</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="efffb64bda94fa4f4493322c5e3717e845d5dc30" datatype="html">
+        <source>Day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="017bbb3b061959c594ac75abfebe91ce9432ca93" datatype="html">
+        <source>of every</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5bb4a09a669f55893c9a37a8480c8fa3f7ce5702" datatype="html">
+        <source>Month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">229</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="33062a762c37a87d10e1e9e23adaf6230a4a742b" datatype="html">
+        <source>at time</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73339760fe932d2b494728d4366947755d127e00" datatype="html">
+        <source>Week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="169eed2bc3e08e1bea977bcc5d799379f6b8a758" datatype="html">
+        <source>of</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">227</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">263</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cc697167c19fb984956b08b0e01767da0dce90fa" datatype="html">
+        <source>Expression</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-editor.template.html</context>
+          <context context-type="linenumber">288</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3109dbd5cf50e128c7236f52363640ceed87c820" datatype="html">
+        <source>Hour(s)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-time-picker.template.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a57842fbab5ade4b6a8970e5f10005993cae74e6" datatype="html">
+        <source>Minute(s)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-time-picker.template.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8b8da66d760526670ade423f15085ea222a1df56" datatype="html">
+        <source>Second(s)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ngx-cron-editor/src/cron-time-picker.template.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
