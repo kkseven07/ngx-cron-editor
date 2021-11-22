@@ -7,7 +7,7 @@ to be used in reactive forms and support Angular Material Design styling.
 
 ## Demo
 
-A work-in-progress demo can be found [here](https://haavardj.github.io/ngx-cron-editor/)
+A work-in-progress demo can be found [here](https://stackblitz.com/edit/angular-ngx-cron-editor?file=src/app/app.component.html) and [here](https://haavardj.github.io/ngx-cron-editor/)
 
 ## Usage
 
