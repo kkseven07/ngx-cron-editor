@@ -1,0 +1,56 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "description": "A cron expression generator for Angular 12+",
+  "name": "@winarg/ngx-cron-editor",
+  "version": "0.8.6",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/winarg/ngx-cron-editor"
+  },
+  "author": {
+    "name": "Håvard Dagenborg Johansen"
+  },
+  "contributors": [
+    "Claudiu Constantin",
+    "Eduardo Sarmiento",
+    "Anargyros Roussos"
+  ],
+  "keywords": [
+    "angular",
+    "cron",
+    "cron-expression",
+    "angular-cli",
+    "quartz"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/winarg/ngx-cron-editor/issues"
+  },
+  "homepage": "https://github.com/winarg/ngx-cron-editor",
+  "peerDependencies": {
+    "@angular/core": "~12.2.11",
+    "@angular/animations": "~12.2.11",
+    "@angular/common": "~12.2.11",
+    "@angular/compiler": "~12.2.11",
+    "@angular/forms": "~12.2.11",
+    "@angular/platform-browser": "~12.2.11",
+    "@angular/platform-browser-dynamic": "~12.2.11",
+    "@angular/router": "~12.2.11",
+    "@angular/material": "^12.2.11",
+    "rxjs": "~7.4.0",
+    "zone.js": "~0.11.4"
+  },
+  "main": "bundles/winarg-ngx-cron-editor.umd.js",
+  "module": "fesm2015/winarg-ngx-cron-editor.js",
+  "es2015": "fesm2015/winarg-ngx-cron-editor.js",
+  "esm2015": "esm2015/winarg-ngx-cron-editor.js",
+  "fesm2015": "fesm2015/winarg-ngx-cron-editor.js",
+  "typings": "winarg-ngx-cron-editor.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.2.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
